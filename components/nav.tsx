@@ -1,12 +1,13 @@
 import React from 'react'
 import { Box, Flex, Link, Button, Stack } from '@chakra-ui/core'
 import Logo from './logo'
+import { PropsWithChildren } from 'react';
 
 interface MenuItem {
   link?: string
 }
 
-const MenuItems: React.FC<MenuItem> = ({ children, link }) => (
+const MenuItems: React.FC<PropsWithChildren<MenuItem>> = ({ children, link }) => (
   <Link
     href={link}
     mt={[4, 4, 0, 0]}
