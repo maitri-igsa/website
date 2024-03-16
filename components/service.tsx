@@ -3,19 +3,21 @@ import { Grid, Text, Flex, Heading, Button, Box, Image } from '@chakra-ui/core'
 
 const Service: React.FC = () => {
   return (
-    <Box position="relative">
+    <Box position="relative" id="services"
+    style={{scrollMarginTop: "132px"}}>
       <Image
         width={['0%', '0%', '0%', '40%', '60%']}
-        maxW="660px"
+        maxW="600px"
         position="absolute"
         top="40%"
         left="5%"
-        src="/service-bg.png"
+        src="/service-bg.jpg"
         display={['none', 'none', 'none', 'block', 'block']}
         borderColor="white"
         borderWidth="10px"
         borderStyle="solid"
         boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
+        
       />
       <Grid
         backgroundColor="orange.500"
@@ -40,7 +42,7 @@ const Service: React.FC = () => {
             mb="8px"
             alignSelf="flex-start"
           >
-            Our Professional Services
+            Our Support
           </Heading>
           <Heading
             as="h4"
@@ -58,15 +60,7 @@ const Service: React.FC = () => {
             textAlign="left"
             lineHeight="23px"
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make aa type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            At Maitri, we understand the challenges of transitioning to a new environment. That's why in addition to creating modern and first-class interiors, we offer a range of support to help ease your journey into this new chapter of life. From arranging airport pickups to organizing events tailored for new students, we're committed to helping you settle in and feel at home in your new surroundings.
           </Text>
           <Button
             alignSelf="flex-start"
@@ -74,6 +68,9 @@ const Service: React.FC = () => {
             backgroundColor="#fff"
             color="orange.500"
             width="fit-content"
+            as={'a'}
+            href="https://getinvolved.ncsu.edu/organization/maitri"
+            target="_blank"
           >
             Learn More
           </Button>

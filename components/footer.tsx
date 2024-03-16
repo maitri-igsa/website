@@ -11,18 +11,16 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <Grid as="footer" templateColumns="repeat(6, 1fr)" mt="16" mb="16">
+    <Grid as="footer" templateColumns="repeat(5, 1fr)" mt="16" mb="16" id="contact">
       <Flex
         flexDirection="column"
         alignItems="flex-start"
-        gridColumn={['1 / 7', '1 / 7', '1 / 7', '1 / 3', '1 / 3']}
+        gridColumn={['1 / 7', '1 / 7', '1 / 3', '1 / 3']}
         pl={['8', '8', '8', '24', '24']}
       >
-        <Logo />
+        <Logo content={"Footer"}/>
         <Text fontSize="sm" mt="4" textAlign="left" lineHeight="22px">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s.
+        Step into the vibrant tapestry of Maitri, where the rich hues of Indian culture blend seamlessly with the diverse fabric of NC State. Join us on a journey filled with warmth, camaraderie, and endless opportunities for connection and growth.
         </Text>
         <Flex
           flexDirection="row"
@@ -30,15 +28,25 @@ const Footer: React.FC = () => {
           alignItems="center"
           mt="8"
         >
-          <Box as={FaFacebookF} size="22px" color="orange.500" mr="12px" />
-          <Box as={FaTwitter} size="22px" color="orange.500" mr="12px" />
+          <a href="https://getinvolved.ncsu.edu/organization/maitri" target="_blank">
           <Box as={FaGoogle} size="22px" color="orange.500" mr="12px" />
-          <Box as={FaInstagram} size="22px" color="orange.500" mr="12px" />
-          <Box as={FaYoutube} size="22px" color="orange.500" />
+          </a>
+          <a href="https://www.instagram.com/maitri.ncsu" target="_blank">
+            <Box as={FaInstagram} size="22px" color="orange.500" mr="12px" />
+          </a>
+          <a href="https://www.facebook.com/MaitriAtNcsu/" target='_blank'>
+            <Box as={FaFacebookF} size="22px" color="orange.500" mr="12px" />
+          </a>
+          <a href="https://twitter.com/NCStateMaitri" target="_blank">
+            <Box as={FaTwitter} size="22px" color="orange.500" mr="12px" />
+          </a>
+         
+          
+          {/* <Box as={FaYoutube} size="22px" color="orange.500" /> */}
         </Flex>
       </Flex>
 
-      <Flex
+      {/* <Flex
         flexDirection="column"
         alignItems="flex-start"
         gridColumn={['1 / 7', '1 / 7', '1 / 7', '3 / 4', '3 / 4']}
@@ -53,7 +61,7 @@ const Footer: React.FC = () => {
         <Text mb="6px">My Account</Text>
         <Text mb="6px">Shopping Cart</Text>
         <Text>Our Shop</Text>
-      </Flex>
+      </Flex> */}
 
       <Flex
         flexDirection="column"
@@ -65,12 +73,12 @@ const Footer: React.FC = () => {
         <Text color="orange.500" fontWeight="bold" fontSize="20px" mb="8px">
           Contact Us
         </Text>
-        <Text mb="6px">Address: C-308 New Delhi</Text>
-        <Text mb="6px">Phone: +91 9876543210</Text>
-        <Text>Email: info@colorlib.com</Text>
+        <Text mb="6px">Address: 109 Kathleen Ct, Morrisville, NC 27560, United States</Text>
+        <Text mb="6px">Phone: +1 9194340801</Text>
+        <Text>Email: maitri-igsa@ncsu.edu</Text>
       </Flex>
 
-      <Flex
+      {/* <Flex
         flexDirection="column"
         alignItems="flex-start"
         gridColumn={['1 / 7', '1 / 7', '1 / 7', '5 / 6', '5 / 6']}
@@ -84,7 +92,7 @@ const Footer: React.FC = () => {
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.{' '}
         </Text>
-      </Flex>
+      </Flex> */}
     </Grid>
   )
 }

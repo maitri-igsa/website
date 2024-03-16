@@ -33,7 +33,15 @@ const customTheme: DefaultTheme = {
     ...theme.colors,
     orange: {
       ...theme.colors.orange,
-      500: "#FBA442"
+      500: "#f0932b"
+    },
+    blue:{
+      ...theme.colors.blue,
+      500: "#3c70cc"
+    },
+    green:{
+      ...theme.colors.green,
+      500: "#6ab04c"
     }
   },
   breakpoints

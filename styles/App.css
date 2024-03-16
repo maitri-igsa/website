@@ -1,0 +1,50 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  .image-container{
+    position: relative;
+    cursor: pointer;
+  }
+
+  .image-container img{
+    border-radius: 16px;
+    width: 100%;
+  }
+
+    .image-container .image-text{
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        /* left: 5%; */
+        /* transform: translate(-50%, -50%); */
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.85),
+            transparent
+        );
+        padding-top: 30px;
+        /* text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); */
+    }
+
+    .image-container:hover .image-text {
+        opacity: 1;
+      }
+
+      /* .image-container:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 75%;
+        height: 100%;
+        background: radial-gradient(
+            ellipse 100% 100% at right center,
+            transparent 80%,
+            #000
+        );
+      } */

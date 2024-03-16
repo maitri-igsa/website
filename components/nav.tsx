@@ -33,11 +33,14 @@ const Nav = props => {
       align="center"
       justify="space-between"
       wrap="wrap"
-      paddingX={['1.5em', '1.5em', '1.5em', '15%']}
-      paddingY="1.5em"
-      bg="rgba(255,255,255,.8)"
+      paddingX={['1.5em', '1.5em', '1.5em', '8%']}
+      alignItems={"center"}
+      paddingY="1em"
       color="black"
+      display={"flex"}
       textTransform="uppercase"
+      bg="rgba(0,0,0,0.5)"
+      boxShadow="0 0 5px 0 rgba(0,0,0,0.5)"
       {...props}
     >
       <Flex align="center" mr={5}>
@@ -64,22 +67,22 @@ const Nav = props => {
           'flex'
         ]}
         width={['full', 'full', 'auto', 'auto']}
-        marginTop={['20px', '20px', 'auto', 'auto']}
+        color={'rgb(255,255,255)'}
         textAlign="center"
         alignItems="center"
       >
-        <MenuItems>Home</MenuItems>
-        <MenuItems>About</MenuItems>
-        <MenuItems>Services</MenuItems>
-        <MenuItems>Gallery</MenuItems>
-        <MenuItems>Blog</MenuItems>
-        <MenuItems>Contact</MenuItems>
-        <Stack spacing={0} direction="row" align="center" marginLeft={20} >
+        <MenuItems link={"#home"}>Home</MenuItems>
+        <MenuItems link={"#about"}>About</MenuItems>
+        <MenuItems link={"#services"}>Services</MenuItems>
+        <MenuItems link={"#team"}>Team</MenuItems>
+        <MenuItems link={"#events"}>Events</MenuItems>
+        <MenuItems link={"#contact"}>Contact</MenuItems>
+        {/* <Stack spacing={0} direction="row" align="center" marginLeft={20} >
           <Button variantColor="yellow">Create an account</Button>
           <Button variantColor="yellow" variant="ghost">
             sign in
           </Button>
-        </Stack>
+        </Stack> */}
        
       </Box>
     </Flex>

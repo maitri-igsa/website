@@ -36,10 +36,9 @@ const DreamHome: React.FC = () => {
             mr="18px"
           />
           <Flex flexDirection="column" fontSize="xl">
-            <Text fontWeight="bold">Free online consultation</Text>
+            <Text fontWeight="bold">Embrace the Vibrancy of India</Text>
             <Text fontSize="sm">
-              Talk to our designers online and start planning your interiors
-              from the comfort of your home.
+              Rediscover the essence of home with Maitri. Join us online to explore the rich tapestry of Indian culture and heritage.
             </Text>
           </Flex>
         </Flex>
@@ -86,7 +85,7 @@ const DreamHome: React.FC = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Button>Consult online now</Button>
+      <Button>Join Us Now</Button>
     </Flex>
   )
 }

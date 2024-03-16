@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     <>
       <Nav />
       <Header />
-      <DreamHome />
+      {/* <DreamHome /> */}
       <About />
       <Service />
       <CreativeDirector />
