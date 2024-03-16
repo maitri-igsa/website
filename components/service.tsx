@@ -68,9 +68,9 @@ const Service: React.FC = () => {
             backgroundColor="#fff"
             color="orange.500"
             width="fit-content"
-            as={'a'}
-            href="https://getinvolved.ncsu.edu/organization/maitri"
-            target="_blank"
+            onClick={()=>{
+              window.open('https://getinvolved.ncsu.edu/organization/maitri', '_blank')
+            }}
           >
             Learn More
           </Button>
