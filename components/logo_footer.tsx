@@ -3,11 +3,11 @@ import React from 'react'
 import { Heading, Text, Image, Box } from '@chakra-ui/core'
 // import MaitriLogo from './Maitri-Logo.png';
 
-const Logo: React.FC = () => {
+const LogoFooter: React.FC = () => {
   return (
     <>
       <Heading as="h1" size="lg" color="orange.500" textTransform="uppercase">
-          <Image src={'./Maitri-Logo.png'} alt="Maitri Logo" mr="1" width={'150px'} />
+          <Image src={'./Maitri-Logo-without.png'} alt="Maitri Logo" mr="1" width={'150px'} />
         {/* <Text display="inline" fontWeight="extrabold">
           Interior
         </Text>{' '}
@@ -19,4 +19,4 @@ const Logo: React.FC = () => {
   )
 }
 
-export default Logo
+export default LogoFooter

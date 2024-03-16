@@ -8,6 +8,7 @@ import {
   FaInstagram,
   FaYoutube
 } from 'react-icons/fa'
+import LogoFooter from './logo_footer'
 
 const Footer: React.FC = () => {
   return (
@@ -18,7 +19,7 @@ const Footer: React.FC = () => {
         gridColumn={['1 / 7', '1 / 7', '1 / 3', '1 / 3']}
         pl={['8', '8', '8', '24', '24']}
       >
-        <Logo content={"Footer"}/>
+        <LogoFooter/>
         <Text fontSize="sm" mt="4" textAlign="left" lineHeight="22px">
         Step into the vibrant tapestry of Maitri, where the rich hues of Indian culture blend seamlessly with the diverse fabric of NC State. Join us on a journey filled with warmth, camaraderie, and endless opportunities for connection and growth.
         </Text>
